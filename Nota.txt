@@ -1,0 +1,19 @@
+
+En Firebird.log
+
+Buscar "#wireCrypt: "
+Sacar "#", buscar y modificar "wireCrypt: Enabled"
+
+Nombre de la Tabla: Inventario
+Contador: gen_inventario_id
+
+
+
+Despues de instalar Node.js:
+
+En una Terminal usar node utilizando la ruta de acceso donde esta el archivo "Server.js".
+
+Ejemplo: "C:\tu-ruta-de-acceso\Sistema-de-Stock\server> node server.js"
+
+Despues de esto, las aplicaciones en Firebird estaran funcionando.
+Averiguar que el puerto 3000 este libre

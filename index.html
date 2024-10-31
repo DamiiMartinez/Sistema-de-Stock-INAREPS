@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Stock - INAREPS</title>
+    <link rel="stylesheet" href="codibarra.css">
+</head>
+<body>
+    <header id="Inicio">
+        <h1>¡Bienvenido!</h1>
+        <h2>Para Iniciar, Conecte el Dispositivo</h2>
+        <br>
+        <button id="Conectar">Conectar Dispositivo</button>
+    </header>
+
+    <main id="main">
+        <div id="Escaner" style="display: none;">
+            <div class="icon-container">
+                <img src="Imagenes/CargarDatos.png" alt="Cargar Datos">
+            </div>
+
+            <textarea id="EntradaScanner" placeholder="Escanea los códigos aquí..." rows="10"></textarea>
+            <div class="button-container">
+                <button id="Mostrar">Ver Datos</button>
+                <button id="Limpiar">Limpiar</button>
+                <button id="Procesar">Procesar Datos</button>
+            </div>
+
+            <div class="icon-container">
+                <img src="Imagenes/MostrarBateria.png" alt="Mostrar Batería">
+                <img src="Imagenes/BorrarDatos.png" alt="Borrar Datos">
+            </div>
+        </div>
+    
+        <div id="tabla_contenedor" style="display: none;">
+            <div id="tabla_ingreso" style="display: none;">
+                <table id="tabla" class="ingreso">
+                    <thead>
+                        <tr>
+                            <th>Producto - Ingreso Hoy</th>
+                        </tr>
+                    </thead>
+                    <tbody style="background-color: lightgreen;"></tbody>
+                </table>
+            </div>
+            <br>
+            <table id="datos" class="datos">
+                <thead>
+                    <tr>
+                        <th>Producto - Base de Datos</th>
+                    </tr>
+                </thead>
+                <tbody style="background-color: lightgreen;"></tbody>
+            </table>
+            <div class="button-container">
+                <button id="Actualizar">Actualizar</button>
+                <button id="Cerrar">Cerrar</button>    
+            </div>
+        </div>    
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
